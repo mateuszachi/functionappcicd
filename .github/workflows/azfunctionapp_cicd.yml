@@ -64,7 +64,7 @@ jobs:
 
     steps:
       - name: Download artifact from build job
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: python-app
           path: ${{ github.workspace }}/${{ github.event.inputs.GIT_FunctionApp_PATH }}
